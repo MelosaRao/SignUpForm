@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Skranji:wght@400;700&display=swap');
+body{
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    background-color:rgb(224, 222, 222);
+}
+@font-face {
+    font-family: norse-bold;
+    src: url(./Norse-Bold.otf);
+}
+img{
+    position: absolute;
+    height: 100vh;
+    z-index: -1;
+    object-fit: cover;
+    width: 30vw;
+}
+.card-container{
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    width:30vw;
+}
+
+.main{
+    display: flex;
+    flex: 1;
+    min-width:70vw;
+}
+
+.text1{
+    min-width: 40%;
+    align-content: end;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    flex: 1;
+}
+.form{
+    display: flex;
+    gap: clamp(10px, 5%, 50px);
+    background-color: white;
+    padding: 50px 20px;
+    align-items: center;
+    margin: 0px;
+    flex: 1;
+    
+}
+
+
+
+.form_in{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+
+button{
+    margin: 20px;
+    background-color: #596D48;
+    padding: 5px 5px;
+    color: white;
+    border-radius: 5px;
+    height: 30px;
+}
+
+.text,.text1{
+    font-family: "Skranji", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    flex-shrink: 1;
+    flex-grow: 1;
+}
+
+input:invalid#pass,
+input:invalid#pass2 {
+    background-color: ivory;
+    border: none;
+    outline: 2px solid red;
+    border-radius: 5px;
+}
+
+
+input:focus{
+    border: 4px solid blue;
+    box-shadow: 5px 5px 10px;
+    outline: none;
+    border-radius: 5px;
+}
+
+
+
+
+input{
+    margin-bottom: clamp(5px, 50vh, 30px);
+    font-size: clamp(16px, 1em, 24px);
+    border: 1px solid black;
+    outline: none;
+}
+
+p{
+    
+    padding: 20px;
+    margin: 0px;
+}
+.card-heading {
+    position: relative;
+    background: black;
+    opacity: 0.6;
+    color: white;
+    top: 100px;
+    text-align: center;
+    font-size: min(3rem,40px);
+    font-family: norse-bold, sans-serif;
+    width: 100%;
+  }
+
+  .button{
+    flex-grow: 1;
+  }
